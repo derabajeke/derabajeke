@@ -1,0 +1,49 @@
+
+<%= javascript_include_tag "jquery.min.js" %>
+<%= stylesheet_link_tag    "jquery-mobile", :media => "all" %>
+<%= stylesheet_link_tag    "styles", :media => "all" %>
+<%= stylesheet_link_tag    "photoswipe", :media => "all" %>
+<%= javascript_include_tag "klass.min" %>
+<%= javascript_include_tag "code.photoswipe-3.0.5.min" %>
+
+
+
+<script type="text/javascript">
+	(function(window, PhotoSwipe){	
+		document.addEventListener('DOMContentLoaded', function(){		
+			var
+				options = {},
+				instance = PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), options );		
+		}, false);
+		
+	}(window, window.Code.PhotoSwipe));
+	
+</script>
+<div style="background-image: url('/assets/wood.png')">
+<div style="padding: 25px">
+<a href="/home/index"><span class="big-button">Home</span></a>&nbsp;
+<a href="/home/audio"><span class="big-button">Audio</span></a>&nbsp;
+<a href="/home/vedio"><span class="big-button">Video</span></a>
+</div>
+<div style="color:brown;padding-left:25px"> Click on any Image to run Slideshow</div>
+
+<div id="MainContent" style="background-image: url('/assets/wood.png')">	
+	<ul id="Gallery" class="gallery">		
+		<li><a href="/assets/full/001.jpg"><img src="/assets/thumb/001.jpg" alt="Image 001" /></a></li>
+		<li><a href="/assets/full/002.jpg"><img src="/assets/thumb/002.jpg" alt="Image 002" /></a></li>
+		<li><a href="/assets/full/003.jpg"><img src="/assets/thumb/003.jpg" alt="Image 003" /></a></li>
+		<li><a href="/assets/full/004.jpg"><img src="/assets/thumb/004.jpg" alt="Image 004" /></a></li>
+		<li><a href="/assets/full/005.jpg"><img src="/assets/thumb/005.jpg" alt="Image 005" /></a></li>
+		<li><a href="/assets/full/006.jpg"><img src="/assets/thumb/006.jpg" alt="Image 006" /></a></li>
+		<li><a href="/assets/full/007.jpg"><img src="/assets/thumb/007.jpg" alt="Image 007" /></a></li>
+		<li><a href="/assets/full/008.jpg"><img src="/assets/thumb/008.jpg" alt="Image 008" /></a></li>
+		<li><a href="/assets/full/009.jpg"><img src="/assets/thumb/009.jpg" alt="Image 009" /></a></li>
+		<li><a href="/assets/full/010.jpg"><img src="/assets/thumb/010.jpg" alt="Image 010" /></a></li>
+		<li><a href="/assets/full/011.jpg"><img src="/assets/thumb/011.jpg" alt="Image 011" /></a></li>
+		<li><a href="/assets/full/012.jpg"><img src="/assets/thumb/012.jpg" alt="Image 012" /></a></li>
+		
+	</ul>
+	
+</div>
+
+</div>

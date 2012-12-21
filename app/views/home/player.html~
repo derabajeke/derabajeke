@@ -1,0 +1,304 @@
+<html>
+<head>
+
+
+<meta charset="utf-8">
+
+<!-- Website Design By: www.happyworm.com -->
+<title>Demo : jPlayer circle player</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="The CSS styleable jQuery media player plugin with HTML5 support!">
+<meta name="keywords" content="jPlayer, jQuery, jQuery plugin, media, video, audio, media player, video player, audio player, mp3, mp4, m4a, m4v, aac, h264, ogg, oga, ogv, wav, webm">
+
+<link href="/home/kapil/Downloads/jQuery.jPlayer.2.2.0/jPlayer.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="/graphics/jplayer.ico" type="image/x-icon">
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IE 6]>
+<link href="/css/ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="/home/kapil/brtg/jQuery.jPlayer.2.2.0/prettify-jPlayer.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="/home/kapil/brtg/jQuery.jPlayer.2.2.0/circle.player.css">
+
+<link href="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" async="" src="/home/kapil/brtg/video-jQuery.jPlayer.2.2.0/ga.js"></script>
+<script type="text/javascript" async="" src="/home/kapil/brtg/video-jQuery.jPlayer.2.2.0/load.js"></script>
+
+
+
+<script src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jquery.min.js"></script>
+
+
+
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jquery.jplayer.inspector.js"></script>
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jquery.transform2d.js"></script>
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jquery.grab.js"></script>
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/mod.csstransforms.min.js"></script>
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/circle.player.js"></script>
+
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jplayer.playlist.min.js"></script>
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/jquery.jplayer.inspector.js"></script>
+<script type="text/javascript" src="/home/kapil/brtg/jQuery.jPlayer.2.2.0/themeswitcher.js"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		{
+			title:"Big Buck Bunny Trailer",
+			artist:"Blender Foundation",
+			free:true,
+			mkv:"/home/kapil/brtg/video-jQuery.jPlayer.2.2.0/Prometheus (2012) .mkv",
+			poster:"http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+		},
+		{
+			title:"Finding Nemo Teaser",
+			artist:"Pixar",
+			m4v: "http://www.jplayer.org/video/m4v/Finding_Nemo_Teaser.m4v",
+			ogv: "http://www.jplayer.org/video/ogv/Finding_Nemo_Teaser.ogv",
+			webmv: "http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm",
+			poster: "http://www.jplayer.org/video/poster/Finding_Nemo_Teaser_640x352.png"
+		},
+		{
+			title:"Incredibles Teaser",
+			artist:"Pixar",
+			m4v: "http://www.jplayer.org/video/m4v/Incredibles_Teaser.m4v",
+			ogv: "http://www.jplayer.org/video/ogv/Incredibles_Teaser.ogv",
+			webmv: "http://www.jplayer.org/video/webm/Incredibles_Teaser.webm",
+			poster: "http://www.jplayer.org/video/poster/Incredibles_Teaser_640x272.png"
+		}
+	], {
+		swfPath: "../js",
+		supplied: "webmv, ogv, mkv"
+	});
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_2",
+		cssSelectorAncestor: "#jp_container_2"
+	}, [
+		{
+			title:"Cro Magnon Man",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg"
+		},
+		{
+			title:"Your Face",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-05-Your_face.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-05-Your_face.ogg"
+		},
+		{
+			title:"Cyber Sonnet",
+			mp3:"http://www.jplayer.org/audio/mp3/TSP-07-Cybersonnet.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/TSP-07-Cybersonnet.ogg"
+		},
+		{
+			title:"Tempered Song",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-01-Tempered-song.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-01-Tempered-song.ogg"
+		},
+		{
+			title:"Hidden",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-02-Hidden.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-02-Hidden.ogg"
+		},
+		{
+			title:"Lentement",
+			free:true,
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg"
+		},
+		{
+			title:"Lismore",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-04-Lismore.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-04-Lismore.ogg"
+		},
+		{
+			title:"The Separation",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-05-The-separation.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-05-The-separation.ogg"
+		},
+		{
+			title:"Beside Me",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-06-Beside-me.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-06-Beside-me.ogg"
+		},
+		{
+			title:"Bubble",
+			free:true,
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+		},
+		{
+			title:"Stirring of a Fool",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-08-Stirring-of-a-fool.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-08-Stirring-of-a-fool.ogg"
+		},
+		{
+			title:"Partir",
+			free: true,
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg"
+		},
+		{
+			title:"Thin Ice",
+			mp3:"http://www.jplayer.org/audio/mp3/Miaow-10-Thin-ice.mp3",
+			oga:"http://www.jplayer.org/audio/ogg/Miaow-10-Thin-ice.ogg"
+		}
+	], {
+		swfPath: "../js",
+		supplied: "oga, mp3",
+		wmode: "window"
+	});
+
+	$("#jplayer_inspector_1").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
+	
+});
+//]]>
+</script>
+
+
+
+
+</head>
+<body>
+<script type="text/javascript">
+ //$(document).ready(function(){
+ // $("#jquery_jplayer_1").jPlayer({
+//   ready: function () {
+//    $(this).jPlayer("setMedia", {
+//     m4a: "/home/kapil/Downloads/jQuery.jPlayer.2.2.0/rani.mp3",
+//     oga: "/home/kapil/Downloads/jQuery.jPlayer.2.2.0/rani.mp3"
+ //   });
+//   },
+//swfPath: "/js",
+ //  supplied: "m4a, oga",
+//wmode: "window"
+
+// });
+// });
+</script>
+
+
+
+
+
+
+
+
+
+<div id="jp_container_1" class="jp-video jp-video-270p">
+			<div class="jp-type-playlist">
+				<div id="jquery_jplayer_1" class="jp-jplayer" style="width: 480px; height: 270px; "><img id="jp_poster_0" style="width: 480px; height: 270px; display: inline; " src="http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"><video id="jp_video_0" preload="metadata" style="width: 0px; height: 0px; " src="http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm"></video></div>
+				<div class="jp-gui" style="">
+					<div class="jp-video-play" style="display: block; ">
+						<a href="javascript:;" class="jp-video-play-icon" tabindex="1">play</a>
+					</div>
+					<div class="jp-interface">
+						<div class="jp-progress">
+							<div class="jp-seek-bar" style="width: 100%; ">
+								<div class="jp-play-bar" style="width: 0%; "></div>
+							</div>
+						</div>
+						<div class="jp-current-time">00:00</div>
+						<div class="jp-duration">00:33</div>
+						<div class="jp-title" style="display: none; ">
+							<ul>
+								<li>Big Buck Bunny Trailer <span class="jp-artist">by Blender Foundation</span></li>
+							</ul>
+						</div>
+						<div class="jp-controls-holder">
+							<ul class="jp-controls">
+								<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+								<li><a href="javascript:;" class="jp-play" tabindex="1" style="">play</a></li>
+								<li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: none; ">pause</a></li>
+								<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+								<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+								<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute" style="">mute</a></li>
+								<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none; ">unmute</a></li>
+								<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume" style="">max volume</a></li>
+							</ul>
+							<div class="jp-volume-bar" style="">
+								<div class="jp-volume-bar-value" style="width: 80%; "></div>
+							</div>
+							<ul class="jp-toggles">
+								<li><a href="javascript:;" class="jp-full-screen" tabindex="1" title="full screen" style="">full screen</a></li>
+								<li><a href="javascript:;" class="jp-restore-screen" tabindex="1" title="restore screen" style="display: none; ">restore screen</a></li>
+								<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle" style="">shuffle</a></li>
+								<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off" style="display: none; ">shuffle off</a></li>
+								<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat" style="">repeat</a></li>
+								<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off" style="display: none; ">repeat off</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="jp-playlist">
+					<ul style="display: block; "><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><span class="jp-free-media">(<a class="jp-playlist-item-free" href="http://www.jplayer.org/video/m4v/Big_Buck_Bunny_Trailer.m4v" tabindex="1">m4v</a> | <a class="jp-playlist-item-free" href="http://www.jplayer.org/video/ogv/Big_Buck_Bunny_Trailer.ogv" tabindex="1">ogv</a> | <a class="jp-playlist-item-free" href="http://www.jplayer.org/video/webm/Big_Buck_Bunny_Trailer.webm" tabindex="1">webmv</a>)</span><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="1">Big Buck Bunny Trailer <span class="jp-artist">by Blender Foundation</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Finding Nemo Teaser <span class="jp-artist">by Pixar</span></a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Incredibles Teaser <span class="jp-artist">by Pixar</span></a></div></li></ul>
+				</div>
+				<div class="jp-no-solution" style="display: none; ">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+<br>
+
+
+
+
+
+<div id="jp_container_1" class="jp-audio">
+			<div class="jp-type-playlist">
+				<div class="jp-gui jp-interface" style="">
+					<ul class="jp-controls">
+						<li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+						<li><a href="javascript:;" class="jp-play" tabindex="1" style="display: none; ">play</a></li>
+						<li><a href="javascript:;" class="jp-pause" tabindex="1" style="display: block; ">pause</a></li>
+						<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+						<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+						<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute" style="">mute</a></li>
+						<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute" style="display: none; ">unmute</a></li>
+						<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume" style="">max volume</a></li>
+					</ul>
+					<div class="jp-progress">
+						<div class="jp-seek-bar" style="width: 100%; ">
+							<div class="jp-play-bar" style="width: 25.492059703225586%; "></div>
+
+						</div>
+					</div>
+					<div class="jp-volume-bar" style="">
+						<div class="jp-volume-bar-value" style="width: 80%; "></div>
+					</div>
+					<div class="jp-current-time">00:49</div>
+					<div class="jp-duration">03:13</div>
+					<ul class="jp-toggles">
+						<li><a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle" style="">shuffle</a></li>
+						<li><a href="javascript:;" class="jp-shuffle-off" tabindex="1" title="shuffle off" style="display: none; ">shuffle off</a></li>
+						<li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat" style="">repeat</a></li>
+						<li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off" style="display: none; ">repeat off</a></li>
+					</ul>
+				</div>
+				<div class="jp-playlist">
+					<ul style="display: block; "><li class=""><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Cro Magnon Man</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Your Face</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Cyber Sonnet</a></div></li><li class=""><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Tempered Song</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Hidden</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><span class="jp-free-media">(<a class="jp-playlist-item-free" href="http://www.jplayer.org/audio/mp3/Miaow-03-Lentement.mp3" tabindex="1">mp3</a> | <a class="jp-playlist-item-free" href="http://www.jplayer.org/audio/ogg/Miaow-03-Lentement.ogg" tabindex="1">oga</a>)</span><a href="javascript:;" class="jp-playlist-item" tabindex="1">Lentement</a></div></li><li class=""><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Lismore</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">The Separation</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Beside Me</a></div></li><li class="jp-playlist-current"><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><span class="jp-free-media">(<a class="jp-playlist-item-free" href="http://www.jplayer.org/audio/mp3/Miaow-07-Bubble.mp3" tabindex="1">mp3</a> | <a class="jp-playlist-item-free" href="http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg" tabindex="1">oga</a>)</span><a href="javascript:;" class="jp-playlist-item jp-playlist-current" tabindex="1">Bubble</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Stirring of a Fool</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><span class="jp-free-media">(<a class="jp-playlist-item-free" href="http://www.jplayer.org/audio/mp3/Miaow-09-Partir.mp3" tabindex="1">mp3</a> | <a class="jp-playlist-item-free" href="http://www.jplayer.org/audio/ogg/Miaow-09-Partir.ogg" tabindex="1">oga</a>)</span><a href="javascript:;" class="jp-playlist-item" tabindex="1">Partir</a></div></li><li><div><a href="javascript:;" class="jp-playlist-item-remove" style="display: none; ">×</a><a href="javascript:;" class="jp-playlist-item" tabindex="1">Thin Ice</a></div></li></ul>
+				</div>
+				<div class="jp-no-solution" style="display: none; ">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+</body>
+</html>
