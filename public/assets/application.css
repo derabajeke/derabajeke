@@ -229,7 +229,7 @@ body {
 
 
 body {
-	background-color: #fff;
+	background-color: wheat;
 	color: #333;
 	font: 1em/1.6 Verdana, Arial, sans-serif;
 	margin:0;
@@ -1027,8 +1027,9 @@ div.jp-video {
 	background-color:#3a2a45;
 }
 div.jp-audio {
-	width:201px;
+	width:750px;
 	padding:20px;
+        margin-bottom: 15px;
 }
 
 div.jp-audio-stream {
@@ -2058,11 +2059,11 @@ a { color: #444340; }
 #SocialLinks:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
 #SocialLinks a { display: block; float: left; padding-right: 15px; }
 
-.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery { list-style: none; padding: 0; margin: 0;margin-left: 15px; }
 .gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
-.gallery li { float: left; width: 33.33333333%; }
-.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
-.gallery li img { display: block; width: 100%; height: auto; }
+.gallery li { float: left;width:110px }
+.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c;width:100px }
+.gallery li img { display: block; width: 100%; height: auto;width:100px }
 
 
 /* For inline examples only */
