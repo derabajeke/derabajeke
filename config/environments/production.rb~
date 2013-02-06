@@ -67,6 +67,5 @@ Bbrtg::Application.configure do
   config.assets.debug = false
   config.assets.logger = false
    config.assets.precompile += %w( *.css *.js jquery.min.js)
-   config.assets.compile = true
 
 end

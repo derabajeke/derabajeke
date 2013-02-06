@@ -1,0 +1,1 @@
+$(document).ready(function(){function e(e){window.location.search="?theme="+e}$("#themeswitcher").change(function(){e($(this).val())})});
